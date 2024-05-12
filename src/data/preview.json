@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "image": "/assets/imgs/demos/2.png",
+    "link": "/home-dots-waves",
+    "title": "Dots Background"
+  },
+  {
+    "id": 2,
+    "image": "/assets/imgs/demos/3.png",
+    "link": "/home-liquid-bg",
+    "title": "Animated Background"
+  },
+  {
+    "id": 3,
+    "image": "/assets/imgs/demos/4.png",
+    "link": "/home-bg-img",
+    "title": "Image Background"
+  },
+  {
+    "id": 4,
+    "image": "/assets/imgs/demos/5.png",
+    "link": "/home-solid",
+    "title": "Solid Background"
+  }
+]

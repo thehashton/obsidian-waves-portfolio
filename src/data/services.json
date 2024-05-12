@@ -1,0 +1,46 @@
+[
+  {
+    "id": 1,
+    "letter": "W",
+    "title": "Web Design",
+    "details": "Modern and mobile-ready website that will help you reach all of your marketing.",
+    "tags": [
+      "UI / UX",
+      "Landing",
+      "Blog"
+    ]
+  },
+  {
+    "id": 2,
+    "letter": "D",
+    "title": "Developments",
+    "details": "Modern and mobile-ready website that will help you reach all of your marketing.",
+    "tags": [
+      "UI / UX",
+      "Landing",
+      "Blog"
+    ]
+  },
+  {
+    "id": 3,
+    "letter": "G",
+    "title": "Graphic Design",
+    "details": "Modern and mobile-ready website that will help you reach all of your marketing.",
+    "tags": [
+      "UI / UX",
+      "Landing",
+      "Blog"
+    ]
+  },
+  {
+    "id": 4,
+    "letter": "A",
+    "title": "Advetising",
+    "details": "Modern and mobile-ready website that will help you reach all of your marketing.",
+    "tags": [
+      "UI / UX",
+      "Landing",
+      "Blog"
+    ]
+  }
+]

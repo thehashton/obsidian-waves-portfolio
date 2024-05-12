@@ -1,0 +1,43 @@
+{
+  "testimonials": [
+    {
+      "id": 1,
+      "picture": "/assets/imgs/testim/1.jpg",
+      "name": "Rob Pike",
+      "position": "Senior Developer",
+      "text": "Harry is a fantastic developer to work with and it was a great experience working alongside him. Very motivated and eager to push the project forward.",
+      "reviews": 71
+    },
+    {
+      "id": 2,
+      "picture": "/assets/imgs/testim/2.jpg",
+      "name": "Alan Turing",
+      "position": "Senior Developer",
+      "text": "Harry is a fantastic developer to work with and it was a great experience working alongside him. Very motivated and eager to push the project forward.",
+      "reviews": 71
+    },
+    {
+      "id": 3,
+      "picture": "/assets/imgs/testim/3.jpg",
+      "name": "Larry Page",
+      "position": "Senior Developer",
+      "text": "Harry is a fantastic developer to work with and it was a great experience working alongside him. Very motivated and eager to push the project forward.",
+      "reviews": 71
+    },
+    {
+      "id": 4,
+      "picture": "/assets/imgs/testim/4.jpg",
+      "name": "Adin Lovelace",
+      "position": "Senior Developer",
+      "text": "Harry is a fantastic developer to work with and it was a great experience working alongside him. Very motivated and eager to push the project forward.",
+      "reviews": 71
+    }
+  ],
+  "brands": [
+    "/assets/imgs/brands/01.png",
+    "/assets/imgs/brands/02.png",
+    "/assets/imgs/brands/03.png",
+    "/assets/imgs/brands/04.png",
+    "/assets/imgs/brands/05.png"
+  ]
+}

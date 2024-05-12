@@ -1,0 +1,66 @@
+{
+  "picture": "/assets/imgs/header/profile.png",
+  "name": "Harry Ashton",
+  "username": "@Harry Ashton",
+  "years_of_experance": 14,
+  "clients": "6k",
+  "brief": "Scelerisque fermentum duisi faucibus in ornare quam sisd sit amet luctussd fav venenatis, lectus magna fringilla zac urna, porttitor rhoncus dolor purus non enim praesent cuz elementum sahas facilisis leot.",
+  "resume": [
+    {
+      "id": 1,
+      "duration": "2020 - Present",
+      "company": "COLLEGE - NCU",
+      "logo": "/assets/imgs/resume/1.svg"
+    },
+    {
+      "id": 2,
+      "duration": "2017 - 2019",
+      "company": "PHD - MIT",
+      "logo": "/assets/imgs/resume/2.svg"
+    },
+    {
+      "id": 3,
+      "duration": "2015 - 2017",
+      "company": "AI TOOLS",
+      "logo": "/assets/imgs/resume/3.svg"
+    },
+    {
+      "id": 4,
+      "duration": "2014 - 2015",
+      "company": "ELP DREAAM",
+      "logo": "/assets/imgs/resume/4.svg"
+    }
+  ],
+  "skills": [
+    {
+      "id": 1,
+      "title": "React",
+      "logo": "/assets/imgs/resume/react.png",
+      "percent": "95%"
+    },
+    {
+      "id": 2,
+      "title": "JavaScript",
+      "logo": "/assets/imgs/resume/js.png",
+      "percent": "90%"
+    },
+    {
+      "id": 3,
+      "title": "Graphic Design",
+      "logo": "/assets/imgs/resume/s3.png",
+      "percent": "85%"
+    },
+    {
+      "id": 4,
+      "title": "WordPress",
+      "logo": "/assets/imgs/resume/s4.png",
+      "percent": "78%"
+    },
+    {
+      "id": 5,
+      "title": "Figma",
+      "logo": "/assets/imgs/resume/s1.png",
+      "percent": "78%"
+    }
+  ]
+}
