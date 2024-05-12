@@ -13,7 +13,7 @@ function Portfolio() {
         <div className="row">
           <div className="col-12">
             <div className="sec-head bord-thin-bottom pb-20 mb-30">
-              <h4 className="sub-title fz-28">Protfolio</h4>
+              <h4 className="sub-title fz-28">Portfolio</h4>
             </div>
           </div>
         </div>
