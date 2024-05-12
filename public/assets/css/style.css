@@ -2268,6 +2268,7 @@ body.loaded {
 
 .author-profile .img {
   background: var(--maincolor);
+  border-radius: 4px;
 }
 
 .author-profile .img img {
@@ -4305,7 +4306,6 @@ img.left {
     max-width: 100%;
   }
   .navbar .logo {
-    max-width: 80px !important;
     margin-left: 30px;
   }
   .navbar .navbar-collapse {
