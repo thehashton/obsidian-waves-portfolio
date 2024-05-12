@@ -61,7 +61,7 @@ function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg static">
       <div className="container">
-        <a className="logo icon-img-120" href="#">
+        <a className="logo" href="/" style={{width: '175px'}}>
           <img src="/assets/imgs/logo-light.png" alt="logo" />
         </a>
         <button
@@ -90,7 +90,7 @@ function Navbar() {
                 className="nav-link"
                 href="/"
                 data-scroll-nav="0"
-                onClick={scrollToSection}
+                // onClick={scrollToSection}
               >
                 <span className="rolling-text">Home</span>
               </a>

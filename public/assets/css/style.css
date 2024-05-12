@@ -1,12 +1,12 @@
 @charset "UTF-8";
 /*-----------------------------------------------------------------------------------
 
-    Theme Name: Hawke
-    Theme URI: http://
-    Description: Creative Personal & Portfolio
-    Author: UI-ThemeZ
-    Author URI: http://themeforest.net/user/UI-ThemeZ
-    Version: 1.0
+	Theme Name: Obsidian Waves
+	Theme URI: http://
+	Description: NextJS Portfolio for Frontend Now
+	Author: Harry Ashton
+	Author URI: https://learnfrontendnow.com
+	Version: 1.0
 
 -----------------------------------------------------------------------------------*/
 /************ TABLE OF CONTENTS ***************
@@ -48,7 +48,7 @@
 /* Variables
 -----------------------------------------------------------------*/
 :root {
-  --maincolor: #d17436;
+  --maincolor: #ff7400;
 }
 
 /* Typography
@@ -152,7 +152,7 @@ body.liquid .video-container:after {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(29, 29, 29, 0.95);
+  background: rgba(29, 29, 29, 0.90);
   opacity: .95;
 }
 
