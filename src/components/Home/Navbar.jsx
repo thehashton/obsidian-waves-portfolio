@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect } from "react";
 import { useState } from "react";
+import Menu from "@/components/Home/Menu";
 
 function Navbar() {
   useEffect(() => {
@@ -64,23 +65,24 @@ function Navbar() {
         <a className="logo" href="/" style={{ width: "175px" }}>
           <img src="/assets/imgs/logo-light.png" alt="logo" />
         </a>
-        <button
-          onClick={() => setShowNav((prev) => !prev)}
-          className="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="icon-bar">
-            <i className="fas fa-bars"></i>
-          </span>
-        </button>
+        <Menu />
+        {/*<button*/}
+        {/*  onClick={() => setShowNav((prev) => !prev)}*/}
+        {/*  className="navbar-toggler"*/}
+        {/*  type="button"*/}
+        {/*  data-toggle="collapse"*/}
+        {/*  data-target="#navbarSupportedContent"*/}
+        {/*  aria-controls="navbarSupportedContent"*/}
+        {/*  aria-expanded="false"*/}
+        {/*  aria-label="Toggle navigation"*/}
+        {/*>*/}
+        {/*  <span className="icon-bar">*/}
+        {/*    <i className="fas fa-bars"></i>*/}
+        {/*  </span>*/}
+        {/*</button>*/}
         <div
           className={`collapse navbar-collapse justify-content-center ${
-            showNav == true && "show"
+            showNav === true ? "show" : ""
           }`}
           id="navbarSupportedContent"
         >
@@ -157,7 +159,6 @@ function Navbar() {
             </li>
           </ul>
         </div>
-
         <div className="md-hide">
           <div className="butn-presv">
             <a

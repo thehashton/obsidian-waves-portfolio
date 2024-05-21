@@ -1,6 +1,6 @@
 import Script from "next/script";
 //= Scripts
-import generateStylesheetObject from '@/common/generateStylesheetsObject';
+import generateStylesheetObject from "@/common/generateStylesheetsObject";
 //= Common Components
 import LoadingScreen from "@/components/Common/Loader";
 import Cursor from "@/components/Common/Cursor";
@@ -18,16 +18,16 @@ import Contact from "@/components/Home/Contact";
 import Footer from "@/components/Common/Footer";
 
 export const metadata = {
-  title: 'Harry Ashton - Frontend developer',
+  title: "Harry Ashton - Frontend developer",
   icons: {
     icon: "/assets/imgs/favicon.ico",
     shortcut: "/assets/imgs/favicon.ico",
     other: generateStylesheetObject([
-      '/assets/css/plugins.css',
-      '/assets/css/style.css'
-    ])
-  }
-}
+      "/assets/css/plugins.css",
+      "/assets/css/style.css",
+    ]),
+  },
+};
 
 export default function Home() {
   return (
@@ -54,5 +54,5 @@ export default function Home() {
       <Script src="/assets/js/ScrollTrigger.min.js" strategy="lazyOnload" />
       <Script src="/assets/js/scripts.js" strategy="lazyOnload" />
     </body>
-  )
+  );
 }
