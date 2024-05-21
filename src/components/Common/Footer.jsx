@@ -10,7 +10,7 @@ function Footer() {
           <div className="col-12">
             <div className="text-center">
               <p className="fz-13">
-                © {new Date().getFullYear()} Frontend Now is Proudly Powered by <span className="underline main-color"><a href={data.author_link} target="_blank"> {data.theme_author}</a></span>
+                © {new Date().getFullYear()} Obsidian Waves Portfolio is Proudly Powered by <span className="underline main-color"><a href={data.author_link} target="_blank"> {data.theme_author}</a></span>
               </p>
             </div>
           </div>

@@ -4,7 +4,7 @@
   "username": "@Harry Ashton",
   "years_of_experance": 14,
   "clients": "6k",
-  "brief": "Scelerisque fermentum duisi faucibus in ornare quam sisd sit amet luctussd fav venenatis, lectus magna fringilla zac urna, porttitor rhoncus dolor purus non enim praesent cuz elementum sahas facilisis leot.",
+  "brief": "My name is Harry and I'm a highly motivated software engineer with a passion for frontend development. Intuitive and user friendly UI development is what I strive for in every project I create. I take part in wider industry discussion and communities and keep my thumb on the pulse of bleeding edge frontend development trends.",
   "resume": [
     {
       "id": 1,
@@ -46,20 +46,62 @@
     },
     {
       "id": 3,
-      "title": "Graphic Design",
-      "logo": "/assets/imgs/resume/s3.png",
+      "title": "CSS",
+      "logo": "/assets/imgs/resume/css.png",
       "percent": "85%"
     },
     {
       "id": 4,
-      "title": "WordPress",
-      "logo": "/assets/imgs/resume/s4.png",
+      "title": "Typescript",
+      "logo": "/assets/imgs/resume/typescript.png",
       "percent": "78%"
     },
     {
       "id": 5,
-      "title": "Figma",
-      "logo": "/assets/imgs/resume/s1.png",
+      "title": "NextJS",
+      "logo": "/assets/imgs/resume/nextjs.png",
+      "percent": "78%"
+    },
+    {
+      "id": 6,
+      "title": "HTML5",
+      "logo": "/assets/imgs/resume/html.png",
+      "percent": "78%"
+    },
+    {
+      "id": 7,
+      "title": "Git",
+      "logo": "/assets/imgs/resume/git.png",
+      "percent": "78%"
+    },
+    {
+      "id": 8,
+      "title": "Tailwind CSS",
+      "logo": "/assets/imgs/resume/tailwind.png",
+      "percent": "78%"
+    },
+    {
+      "id": 9,
+      "title": "SCSS",
+      "logo": "/assets/imgs/resume/sass.png",
+      "percent": "78%"
+    },
+    {
+      "id": 10,
+      "title": "Redux",
+      "logo": "/assets/imgs/resume/redux.png",
+      "percent": "78%"
+    },
+    {
+      "id": 11,
+      "title": "Graphql",
+      "logo": "/assets/imgs/resume/graphql.png",
+      "percent": "78%"
+    },
+    {
+      "id": 12,
+      "title": "WordPress",
+      "logo": "/assets/imgs/resume/s4.png",
       "percent": "78%"
     }
   ]

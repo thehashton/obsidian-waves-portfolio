@@ -42,9 +42,9 @@ function Author() {
 
   return (
     <div
-      className="author-profile pt-80 pb-80"
+      className="author-profile relative md:author-profile sm:flex hidden !w-full rounded-full pt-80 pb-80"
       id="sticky_item"
-      style={{ width: stickyItemWidth }}
+      style={{ width: stickyItemWidth - 100}}
     >
       <div className="cont">
         <div className="img">

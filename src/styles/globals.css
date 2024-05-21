@@ -1,8 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  font-family: 'Exo', 'sans-serif' !important;
+}
+
 .is-sticky {
   position: fixed;
   top: 10px;
   z-index: 999;
 }
+
 @media (max-width: 1010px) {
   .is-sticky {
     position: static;
@@ -12,4 +22,10 @@
   position: absolute;
   bottom: 10px;
   top: unset;
+}
+
+.exo {
+  font-family: "Exo", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
