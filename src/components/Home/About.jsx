@@ -6,7 +6,7 @@ function About() {
   return (
     <div className="about pt-40" data-scroll-index="1">
       {" "}
-      <div className={"py-4"}>
+      <div className={"py-4 hidden md:block"}>
         <DotsPattern />
       </div>
       <div className="!max-w-[400px] m-auto block md:hidden">
