@@ -1,24 +1,24 @@
-'use client';
-import React, { useEffect } from 'react';
-import { useState } from 'react';
+"use client";
+import React, { useEffect } from "react";
+import { useState } from "react";
 
 function Navbar() {
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   function handleScroll() {
-    let navbar = document.querySelector('.navbar');
-    if (window.scrollY > 350) navbar.classList.add('nav-scroll');
-    else navbar.classList.remove('nav-scroll');
+    let navbar = document.querySelector(".navbar");
+    if (window.scrollY > 350) navbar.classList.add("nav-scroll");
+    else navbar.classList.remove("nav-scroll");
   }
 
   function scrollToSection(event) {
     event.preventDefault();
-    let sectionIndex = event.currentTarget.getAttribute('data-scroll-nav');
+    let sectionIndex = event.currentTarget.getAttribute("data-scroll-nav");
     let section = document.querySelector(
-      `[data-scroll-index="${sectionIndex}"]`
+      `[data-scroll-index="${sectionIndex}"]`,
     );
 
     if (section) {
@@ -29,19 +29,19 @@ function Navbar() {
   }
 
   useEffect(() => {
-    let elements = document.querySelectorAll('.rolling-text');
+    let elements = document.querySelectorAll(".rolling-text");
 
     elements.forEach((element) => {
       let innerText = element.innerText;
-      element.innerHTML = '';
+      element.innerHTML = "";
 
-      let textContainer = document.createElement('div');
-      textContainer.classList.add('block');
+      let textContainer = document.createElement("div");
+      textContainer.classList.add("block");
 
       for (let letter of innerText) {
-        let span = document.createElement('span');
-        span.innerText = letter.trim() === '' ? '\xa0' : letter;
-        span.classList.add('letter');
+        let span = document.createElement("span");
+        span.innerText = letter.trim() === "" ? "\xa0" : letter;
+        span.classList.add("letter");
         textContainer.appendChild(span);
       }
 
@@ -50,8 +50,8 @@ function Navbar() {
     });
 
     elements.forEach((element) => {
-      element.addEventListener('mouseover', () => {
-        element.classList.remove('play');
+      element.addEventListener("mouseover", () => {
+        element.classList.remove("play");
       });
     });
   }, []);
@@ -61,7 +61,7 @@ function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg static">
       <div className="container">
-        <a className="logo" href="/" style={{width: '175px'}}>
+        <a className="logo" href="/" style={{ width: "175px" }}>
           <img src="/assets/imgs/logo-light.png" alt="logo" />
         </a>
         <button
@@ -80,7 +80,7 @@ function Navbar() {
         </button>
         <div
           className={`collapse navbar-collapse justify-content-center ${
-            showNav == true && 'show'
+            showNav == true && "show"
           }`}
           id="navbarSupportedContent"
         >
@@ -162,7 +162,7 @@ function Navbar() {
           <div className="butn-presv">
             <a
               href="#0"
-              className="butn butn-sm butn-bg bg-white radius-5 skew"
+              className="butn butn-sm butn-bg radius-5 skew !border-orange-500 !bg-orange-500 !text-lg"
             >
               <span className="text-dark">Hire Me!</span>
             </a>

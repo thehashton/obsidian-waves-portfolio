@@ -1,33 +1,33 @@
-'use client';
-import React, { useEffect, useState } from 'react';
+"use client";
+import React, { useEffect, useState } from "react";
 //= Static Data
-import data from '@/data/info.json';
+import data from "@/data/info.json";
 
 function Author() {
   const [stickyItemWidth, setStickyItemWidth] = useState(undefined);
   const [stickyItemTop, setStickyItemTop] = useState(undefined);
   function isSticky() {
-    const stickyItemEl = document.querySelector('#sticky_item');
+    const stickyItemEl = document.querySelector("#sticky_item");
     const stickyItemParentEl =
-      document.querySelector('#sticky_item').parentElement;
+      document.querySelector("#sticky_item").parentElement;
     const scrollTop = window.scrollY;
 
-    if (scrollTop >= stickyItemTop) stickyItemEl.classList.add('is-sticky');
-    else stickyItemEl.classList.remove('is-sticky');
+    if (scrollTop >= stickyItemTop) stickyItemEl.classList.add("is-sticky");
+    else stickyItemEl.classList.remove("is-sticky");
 
     if (
       scrollTop >= stickyItemTop &&
       stickyItemParentEl.getBoundingClientRect().top < -775
     ) {
-      stickyItemEl.classList.add('is-positioned');
-      stickyItemParentEl.style.position = 'relative';
+      stickyItemEl.classList.add("is-positioned");
+      stickyItemParentEl.style.position = "relative";
     } else {
-      stickyItemEl.classList.remove('is-positioned');
+      stickyItemEl.classList.remove("is-positioned");
     }
   }
   useEffect(() => {
     const stickyItemEl = document
-      .querySelector('#sticky_item')
+      .querySelector("#sticky_item")
       .getBoundingClientRect();
     setStickyItemWidth(stickyItemEl.width);
     setStickyItemTop(stickyItemEl.top);
@@ -35,16 +35,16 @@ function Author() {
 
   useEffect(() => {
     if (!stickyItemTop) return;
-    window.addEventListener('scroll', isSticky);
-    return () => window.removeEventListener('scroll', isSticky);
+    window.addEventListener("scroll", isSticky);
+    return () => window.removeEventListener("scroll", isSticky);
     // eslint-disable-next-line
   }, [stickyItemTop]);
 
   return (
     <div
-      className="author-profile relative md:author-profile sm:flex hidden !w-full rounded-full pt-80 pb-80"
+      className="author-profile relative md:author-profile sm:flex hidden !w-full !max-w-[360px] rounded-full pt-80 pb-80"
       id="sticky_item"
-      style={{ width: stickyItemWidth - 100}}
+      style={{ width: stickyItemWidth - 100 }}
     >
       <div className="cont">
         <div className="img">

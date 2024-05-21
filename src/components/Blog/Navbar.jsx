@@ -1,17 +1,17 @@
-'use client';
-import React, { useEffect } from 'react';
-import Link from 'next/link';
+"use client";
+import React, { useEffect } from "react";
+import Link from "next/link";
 
 function Navbar() {
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   function handleScroll() {
-    let navbar = document.querySelector('.navbar');
-    if (window.scrollY > 350) navbar.classList.add('nav-scroll')
-    else navbar.classList.remove('nav-scroll')
+    let navbar = document.querySelector(".navbar");
+    if (window.scrollY > 350) navbar.classList.add("nav-scroll");
+    else navbar.classList.remove("nav-scroll");
   }
 
   useEffect(() => {
@@ -48,46 +48,75 @@ function Navbar() {
         <a className="logo icon-img-100" href="#">
           <img src="/assets/imgs/logo-light.png" alt="logo" />
         </a>
-        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span className="icon-bar"><i className="fas fa-bars"></i></span>
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="icon-bar">
+            <i className="fas fa-bars"></i>
+          </span>
         </button>
-        <div className="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+        <div
+          className="collapse navbar-collapse justify-content-center"
+          id="navbarSupportedContent"
+        >
           <ul className="navbar-nav">
             <li className="nav-item">
-              <Link className="nav-link" href="/home-main" data-scroll-nav="0"><span className="rolling-text">Home</span></Link>
+              <Link className="nav-link" href="/home-main" data-scroll-nav="0">
+                <span className="rolling-text">Home</span>
+              </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" href="/home-main" data-scroll-nav="1"><span className="rolling-text">About</span></Link>
+              <Link className="nav-link" href="/home-main" data-scroll-nav="1">
+                <span className="rolling-text">About</span>
+              </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" href="/home-main" data-scroll-nav="2"><span className="rolling-text">Services</span></Link>
+              <Link className="nav-link" href="/home-main" data-scroll-nav="2">
+                <span className="rolling-text">Services</span>
+              </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" href="/home-main" data-scroll-nav="3"><span className="rolling-text">Portfolio</span></Link>
+              <Link className="nav-link" href="/home-main" data-scroll-nav="3">
+                <span className="rolling-text">Portfolio</span>
+              </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" href="/home-main" data-scroll-nav="4"><span className="rolling-text">Testimonials</span></Link>
+              <Link className="nav-link" href="/home-main" data-scroll-nav="4">
+                <span className="rolling-text">Testimonials</span>
+              </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" href="/home-main" data-scroll-nav="5"><span className="rolling-text">Blog</span></Link>
+              <Link className="nav-link" href="/home-main" data-scroll-nav="5">
+                <span className="rolling-text">Blog</span>
+              </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" href="/home-main" data-scroll-nav="6"><span className="rolling-text">Contact</span></Link>
+              <Link className="nav-link" href="/home-main" data-scroll-nav="6">
+                <span className="rolling-text">Contact</span>
+              </Link>
             </li>
           </ul>
         </div>
 
         <div className="md-hide">
           <div className="butn-presv">
-            <a href="#0" className="butn butn-sm butn-bg bg-white radius-5 skew">
-              <span className="text-dark">Hire Me!</span>
+            <a
+              href="#0"
+              className="butn butn-sm butn-bg bg-white radius-5 skew "
+            >
+              <span className="text-dark ">Hire Me!</span>
             </a>
           </div>
         </div>
       </div>
     </nav>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;
