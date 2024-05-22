@@ -19,7 +19,7 @@ const Menu = () => {
 
   return (
     <>
-      <div className="menu-icon" onClick={toggleNav}>
+      <div className="menu-icon mr-4" onClick={toggleNav}>
         <span className="menu-icon__line menu-icon__line-left"></span>
         <span className="menu-icon__line"></span>
         <span className="menu-icon__line menu-icon__line-right"></span>

@@ -61,11 +61,11 @@ function Navbar() {
 
   return (
     <nav className="navbar navbar-expand-lg static">
-      <div className="container">
+      <div className="container !max-w-screen-2xl">
+        <Menu />
         <a className="logo" href="/" style={{ width: "175px" }}>
           <img src="/assets/imgs/logo-light.png" alt="logo" />
         </a>
-        <Menu />
         {/*<button*/}
         {/*  onClick={() => setShowNav((prev) => !prev)}*/}
         {/*  className="navbar-toggler"*/}
