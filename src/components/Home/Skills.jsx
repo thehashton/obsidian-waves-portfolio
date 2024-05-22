@@ -1,6 +1,5 @@
 "use client";
 import React, { useEffect } from "react";
-//= Static Data
 import data from "@/data/info.json";
 import isInView from "@/common/isInView";
 
@@ -25,10 +24,8 @@ function Skills() {
       </div>
       <div className="row">
         {data.skills.map((item, index) => (
-          <div className="col-md-6" key={item.id}>
-            <div
-              className={`item ${index !== data.skills.length - 1 ? "mb-30" : ""}`}
-            >
+          <div className="col-md-4 col-sm-6 mb-30" key={item.id}>
+            <div className={`item`}>
               <div className="d-flex align-items-center mb-30">
                 <div className="mr-30">
                   <div className="img icon-img-40">
