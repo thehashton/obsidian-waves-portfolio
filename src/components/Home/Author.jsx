@@ -42,7 +42,7 @@ function Author() {
 
   return (
     <div
-      className="author-profile relative md:author-profile sm:flex hidden !w-full !max-w-[360px] rounded-full pt-80 pb-80"
+      className="author-profile relative md:author-profile lg:!flex hidden !w-full !max-w-[360px] rounded-full pt-80 pb-80"
       id="sticky_item"
       style={{ width: stickyItemWidth - 100 }}
     >

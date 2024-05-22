@@ -6,10 +6,10 @@ function About() {
   return (
     <div className="about pt-40" data-scroll-index="1">
       {" "}
-      <div className={"py-4 hidden md:block"}>
+      <div className={"py-4 hidden lg:block"}>
         <DotsPattern />
       </div>
-      <div className="!max-w-[400px] m-auto block md:hidden">
+      <div className="!max-w-[400px] m-auto block lg:hidden">
         <img
           className={"border-transparent rounded-t-full bg-orange-500 mb-30"}
           src={data.picture}

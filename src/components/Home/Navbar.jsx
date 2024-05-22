@@ -62,7 +62,9 @@ function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg static">
       <div className="container !max-w-screen-2xl">
-        <Menu />
+        <div className={"!max-w-[60px] !w-full !relative"}>
+          <Menu />
+        </div>
         <a className="logo" href="/" style={{ width: "175px" }}>
           <img src="/assets/imgs/logo-light.png" alt="logo" />
         </a>
