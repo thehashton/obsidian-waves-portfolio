@@ -5,6 +5,7 @@
 
 html, body {
   font-family: 'Exo', 'sans-serif' !important;
+  cursor: none;
 }
 
 .is-sticky {

@@ -68,20 +68,6 @@ function Navbar() {
         <a className="logo" href="/" style={{ width: "175px" }}>
           <img src="/assets/imgs/logo-light.png" alt="logo" />
         </a>
-        {/*<button*/}
-        {/*  onClick={() => setShowNav((prev) => !prev)}*/}
-        {/*  className="navbar-toggler"*/}
-        {/*  type="button"*/}
-        {/*  data-toggle="collapse"*/}
-        {/*  data-target="#navbarSupportedContent"*/}
-        {/*  aria-controls="navbarSupportedContent"*/}
-        {/*  aria-expanded="false"*/}
-        {/*  aria-label="Toggle navigation"*/}
-        {/*>*/}
-        {/*  <span className="icon-bar">*/}
-        {/*    <i className="fas fa-bars"></i>*/}
-        {/*  </span>*/}
-        {/*</button>*/}
         <div
           className={`collapse navbar-collapse justify-content-center ${
             showNav === true ? "show" : ""
@@ -90,12 +76,7 @@ function Navbar() {
         >
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a
-                className="nav-link"
-                href="/"
-                data-scroll-nav="0"
-                // onClick={scrollToSection}
-              >
+              <a className="nav-link" href="/" data-scroll-nav="0">
                 <span className="rolling-text">Home</span>
               </a>
             </li>
@@ -109,16 +90,6 @@ function Navbar() {
                 <span className="rolling-text">About</span>
               </a>
             </li>
-            {/*<li className="nav-item">*/}
-            {/*  <a*/}
-            {/*    className="nav-link"*/}
-            {/*    href="#0"*/}
-            {/*    data-scroll-nav="2"*/}
-            {/*    onClick={scrollToSection}*/}
-            {/*  >*/}
-            {/*    <span className="rolling-text">Services</span>*/}
-            {/*  </a>*/}
-            {/*</li>*/}
             <li className="nav-item">
               <a
                 className="nav-link"
@@ -129,26 +100,6 @@ function Navbar() {
                 <span className="rolling-text">Portfolio</span>
               </a>
             </li>
-            {/*<li className="nav-item">*/}
-            {/*  <a*/}
-            {/*    className="nav-link"*/}
-            {/*    href="#0"*/}
-            {/*    data-scroll-nav="4"*/}
-            {/*    onClick={scrollToSection}*/}
-            {/*  >*/}
-            {/*    <span className="rolling-text">Testimonials</span>*/}
-            {/*  </a>*/}
-            {/*</li>*/}
-            {/*<li className="nav-item">*/}
-            {/*  <a*/}
-            {/*    className="nav-link"*/}
-            {/*    href="#0"*/}
-            {/*    data-scroll-nav="5"*/}
-            {/*    onClick={scrollToSection}*/}
-            {/*  >*/}
-            {/*    <span className="rolling-text">Blog</span>*/}
-            {/*  </a>*/}
-            {/*</li>*/}
             <li className="nav-item">
               <a
                 className="nav-link"
@@ -161,7 +112,25 @@ function Navbar() {
             </li>
           </ul>
         </div>
-        <div className="md-hide">
+        <div className={"flex px-4 gap-3"}>
+          <a
+            href="https://github.com/thehashton"
+            className="text-white text-4xl hover:opacity-35 transition-opacity duration-300"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="fab fa-github"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/harry-ashton-b0b15b30/"
+            className="text-white text-4xl hover:opacity-35 transition-opacity duration-300"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="fab fa-linkedin"></i>
+          </a>
+        </div>
+        <div className="md-hide flex items-center space-x-4">
           <div className="butn-presv">
             <a
               href="#0"

@@ -63,7 +63,7 @@ function Author() {
           <a href="https://twitter.com/TheHashton">
             <i className="fa-brands fa-x-twitter"></i>
           </a>
-          <a href="#tiktok">
+          <a href="https://tiktok.com/@thehashton">
             <i className="fa-brands fa-tiktok"></i>
           </a>
           <a href="https://www.linkedin.com/in/harry-ashton-b0b15b30/">
