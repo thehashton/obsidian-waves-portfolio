@@ -26,7 +26,7 @@ function Portfolio() {
             <div className="col-lg-6" key={item.id}>
               <div className="item mt-50">
                 <div className="img">
-                  <Link href="/project/phone-app">
+                  <Link href={item.href}>
                     <img src={item.image} alt="" className="radius-5" />
                   </Link>
                 </div>
@@ -34,12 +34,12 @@ function Portfolio() {
                   <div>
                     <span className="tag">{item.tag}</span>
                     <h6 className="line-height-1">
-                      <Link href="/project">{item.title}</Link>
+                      <Link href={item.href}>{item.title}</Link>
                     </h6>
                   </div>
                   <div className="ml-auto">
                     <div className="arrow">
-                      <Link href="/project">
+                      <Link href={item.href}>
                         <svg
                           className="arrow-right"
                           xmlns="http://www.w3.org/2000/svg"

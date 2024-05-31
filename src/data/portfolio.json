@@ -2,14 +2,17 @@
   {
     "id": 1,
     "image": "/assets/imgs/works/phone-app.png",
-    "title": "GeekFolio Portfolio",
-    "tag": "Branding"
+    "title": "Phone-app Project",
+    "tag": "Single Page Application",
+    "href": "/project/phone-app"
   },
   {
     "id": 2,
-    "image": "/assets/imgs/works/2.jpg",
-    "title": "Luxury Modern Website",
-    "tag": "Branding"
+    "image": "/assets/imgs/works/apple-product-flow.png",
+    "title": "Apple product purchase flow",
+    "tag": "E-Commerce UI",
+    "href": "/project/apple-product-flow"
+
   },
   {
     "id": 3,
