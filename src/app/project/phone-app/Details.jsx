@@ -199,12 +199,12 @@ const PhoneAppDetails = () => {
               <div className="row md-marg">
                 <div className="col-md-6">
                   <div className="img sm-mb30">
-                    <img src="/assets/imgs/works/phone-app.png" alt="" />
+                    <img src="/assets/imgs/works/phone-app-1.png" alt="" />
                   </div>
                 </div>
                 <div className="col-md-6">
                   <div className="img">
-                    <img src="/assets/imgs/works/phone-app.png" alt="" />
+                    <img src="/assets/imgs/works/phone-app-2.png" alt="" />
                   </div>
                 </div>
               </div>
