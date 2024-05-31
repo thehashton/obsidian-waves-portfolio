@@ -4,7 +4,7 @@ import DotsPattern from "@/components/DotsPattern/DotsPattern";
 
 function About() {
   return (
-    <div className="about pt-40" data-scroll-index="1">
+    <div className="about pt-40" data-scroll-index="1" id={"about"}>
       {" "}
       <div className={"py-4 hidden lg:block"}>
         <DotsPattern />

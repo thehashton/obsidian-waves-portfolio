@@ -85,7 +85,7 @@ function Navbar() {
                 className="nav-link"
                 href="#1"
                 data-scroll-nav="1"
-                onClick={scrollToSection}
+                // onClick={scrollToSection}
               >
                 <span className="rolling-text">About</span>
               </a>
@@ -95,7 +95,7 @@ function Navbar() {
                 className="nav-link"
                 href="#0"
                 data-scroll-nav="3"
-                onClick={scrollToSection}
+                // onClick={scrollToSection}
               >
                 <span className="rolling-text">Portfolio</span>
               </a>
@@ -105,7 +105,7 @@ function Navbar() {
                 className="nav-link"
                 href="#0"
                 data-scroll-nav="6"
-                onClick={scrollToSection}
+                // onClick={scrollToSection}
               >
                 <span className="rolling-text">Contact</span>
               </a>
@@ -133,7 +133,7 @@ function Navbar() {
         <div className="md-hide flex items-center space-x-4">
           <div className="butn-presv">
             <a
-              href="#0"
+              href="/"
               className="butn butn-sm butn-bg radius-5 skew !border-orange-500 !bg-orange-500 !text-lg"
             >
               <span className="text-dark">Hire Me!</span>

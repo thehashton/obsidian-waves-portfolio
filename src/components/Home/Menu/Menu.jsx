@@ -1,9 +1,13 @@
 "use client";
 import React, { useState, useEffect } from "react";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
 import "./Menu.css";
 
 const Menu = () => {
   const [navActive, setNavActive] = useState(false);
+  const [targetSection, setTargetSection] = useState("");
+  const router = useRouter();
 
   const toggleNav = () => {
     setNavActive(!navActive);
@@ -18,21 +22,28 @@ const Menu = () => {
     }
   }, [navActive]);
 
-  const scrollToSection = (event) => {
-    event.preventDefault();
-    let sectionIndex = event.currentTarget.getAttribute("data-scroll-nav");
-    let section = document.querySelector(
-      `[data-scroll-index="${sectionIndex}"]`,
-    );
-
-    if (section) {
-      setTimeout(() => {
-        section.scrollIntoView();
-        setNavActive(false); // Close the menu after scrolling
-      }, 500);
-    } else {
-      setNavActive(false); // Close the menu if section is not found
+  useEffect(() => {
+    if (targetSection) {
+      scrollToSection(targetSection);
+      setTargetSection(""); // Reset target section after scrolling
     }
+  }, [targetSection]);
+
+  const scrollToSection = (sectionId) => {
+    const section = document.querySelector(`#${sectionId}`);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const handleLinkClick = (href, sectionId) => {
+    if (router.pathname === "/") {
+      scrollToSection(sectionId);
+    } else {
+      setTargetSection(sectionId);
+      router.push(href);
+    }
+    setNavActive(false);
   };
 
   return (
@@ -43,28 +54,56 @@ const Menu = () => {
         <span className="menu-icon__line menu-icon__line-right"></span>
       </div>
 
-      <div className="nav">
+      <div className={`nav ${navActive ? "nav--active" : ""}`}>
         <div className="nav__content">
           <ul className="nav__list">
             <li className="nav__list-item">
-              <a href="/" data-scroll-nav="0" onClick={scrollToSection}>
+              <Link
+                href="/"
+                onClick={(e) => {
+                  e.preventDefault();
+                  handleLinkClick("/", "home");
+                  scrollToSection("home");
+                }}
+              >
                 Home
-              </a>
+              </Link>
             </li>
             <li className="nav__list-item">
-              <a href="#1" data-scroll-nav="1" onClick={scrollToSection}>
+              <Link
+                href="/"
+                onClick={(e) => {
+                  e.preventDefault();
+                  handleLinkClick("/#about", "about");
+                  scrollToSection("about");
+                }}
+              >
                 About
-              </a>
+              </Link>
             </li>
             <li className="nav__list-item">
-              <a href="#3" data-scroll-nav="3" onClick={scrollToSection}>
+              <Link
+                href="/"
+                onClick={(e) => {
+                  e.preventDefault();
+                  handleLinkClick("/#projects", "projects");
+                  scrollToSection("projects");
+                }}
+              >
                 Projects
-              </a>
+              </Link>
             </li>
             <li className="nav__list-item">
-              <a href="#contact" data-scroll-nav="4" onClick={scrollToSection}>
+              <Link
+                href="/"
+                onClick={(e) => {
+                  e.preventDefault();
+                  handleLinkClick("/#contact", "contact");
+                  scrollToSection("contact");
+                }}
+              >
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 
-function Details() {
+const PhoneAppDetails = () => {
   const [stickyItemWidth, setStickyItemWidth] = useState(undefined);
   const [stickyItemTop, setStickyItemTop] = useState(undefined);
 
@@ -48,12 +48,9 @@ function Details() {
             <div className="row justify-content-center">
               <div className="col-lg-7">
                 <div className="cont md-mb50">
-                  <h3 className="mb-15 fw-500">The First layer.</h3>
+                  <h3 className="mb-15 fw-500">The Phone App</h3>
                   <p>
-                    We create everything digital, printable and analytical won’t
-                    seasons, appear days them stars replenish divided. All
-                    second forth. Him place was seas man and gathering creepeth
-                    called fly.
+                    A HTML, CSS and Javascript Single Page Application (SPA).
                   </p>
                   <p className="mt-15">
                     Now there is more fashion. There is no so-called trends. Now
@@ -202,12 +199,12 @@ function Details() {
               <div className="row md-marg">
                 <div className="col-md-6">
                   <div className="img sm-mb30">
-                    {/*<img src="/assets/imgs/works/project/2.png" alt="" />*/}
+                    <img src="/assets/imgs/works/phone-app.png" alt="" />
                   </div>
                 </div>
                 <div className="col-md-6">
                   <div className="img">
-                    {/*<img src="/assets/imgs/works/project/3.png" alt="" />*/}
+                    <img src="/assets/imgs/works/phone-app.png" alt="" />
                   </div>
                 </div>
               </div>
@@ -243,6 +240,6 @@ function Details() {
       </div>
     </section>
   );
-}
+};
 
-export default Details;
+export default PhoneAppDetails;

@@ -8,7 +8,7 @@ import { ScrollIndicator } from "@/components/Home/ScrollIndicator";
 
 function MainBox() {
   return (
-    <section className="box relative" data-scroll-index={"0"}>
+    <section className="box relative" data-scroll-index={"0"} id={"home"}>
       <div className="container">
         <div className="row md-marg">
           <div className="col-lg-7 offset-lg-1">
