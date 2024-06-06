@@ -53,7 +53,7 @@ function About() {
       {/*  />*/}
       {/*</div>*/}
       <div className="flex flex-wrap cont">
-        <h1 className={"text-5xl"}>
+        <h1 className={"text-5xl leading-[60px] md:text-6xl md:leading-[80px]"}>
           Hi, I'm <span className="main-color font-bold">Harry Ashton</span> a{" "}
           <span className="bord">
             Front-end Developer<i></i>
