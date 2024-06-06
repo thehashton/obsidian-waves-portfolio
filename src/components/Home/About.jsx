@@ -45,15 +45,15 @@ function About() {
       {/*  </div>*/}
       {/*  /!*<ThreeJSAnimation />*!/*/}
       {/*</div>*/}
-      <div className="!max-w-[400px] m-auto block lg:hidden">
-        <img
-          className={"border-transparent rounded-t-full bg-orange-500 mb-30"}
-          src={data.picture}
-          alt=""
-        />
-      </div>
+      {/*<div className="!max-w-[400px] m-auto block lg:hidden">*/}
+      {/*  <img*/}
+      {/*    className={"border-transparent rounded-t-full bg-orange-500 mb-30"}*/}
+      {/*    src={data.picture}*/}
+      {/*    alt=""*/}
+      {/*  />*/}
+      {/*</div>*/}
       <div className="flex flex-wrap cont">
-        <h1>
+        <h1 className={"text-5xl"}>
           Hi, I'm <span className="main-color font-bold">Harry Ashton</span> a{" "}
           <span className="bord">
             Front-end Developer<i></i>
