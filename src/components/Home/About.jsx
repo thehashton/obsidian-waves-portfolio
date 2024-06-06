@@ -1,6 +1,7 @@
 import React from "react";
 import data from "@/data/info.json";
 import DotsPattern from "@/components/DotsPattern/DotsPattern";
+import ThreeJSAnimation from "@/components/ThreeJSAnimation";
 
 function About() {
   return (
@@ -9,6 +10,41 @@ function About() {
       <div className={"py-4 hidden lg:block"}>
         <DotsPattern />
       </div>
+      {/*<div*/}
+      {/*  className="author-profile relative md:author-profile lg:!flex hidden !w-full !max-w-[360px] rounded-full pt-80 pb-80"*/}
+      {/*  // id="sticky_item"*/}
+      {/*  style={{ width: "auto" }}*/}
+      {/*>*/}
+      {/*  <div className="cont">*/}
+      {/*    <div className="img">*/}
+      {/*      <img src={data.picture} alt="" />*/}
+      {/*    </div>*/}
+      {/*    <div className="info text-center mt-30">*/}
+      {/*      <h5>{data.name}</h5>*/}
+      {/*      <p>*/}
+      {/*        <a href="#0">{data.username}</a>*/}
+      {/*      </p>*/}
+      {/*    </div>*/}
+      {/*    <div className="social text-center mt-20">*/}
+      {/*      /!*<a href="#0">*!/*/}
+      {/*      /!*  <i className="fab fa-behance"></i>*!/*/}
+      {/*      /!*</a>*!/*/}
+      {/*      <a href="https://twitter.com/TheHashton">*/}
+      {/*        <i className="fa-brands fa-x-twitter"></i>*/}
+      {/*      </a>*/}
+      {/*      <a href="https://tiktok.com/@thehashton">*/}
+      {/*        <i className="fa-brands fa-tiktok"></i>*/}
+      {/*      </a>*/}
+      {/*      <a href="https://www.linkedin.com/in/harry-ashton-b0b15b30/">*/}
+      {/*        <i className="fab fa-linkedin-in"></i>*/}
+      {/*      </a>*/}
+      {/*      /!*<a href="#0">*!/*/}
+      {/*      /!*  <i className="fab fa-dribbble"></i>*!/*/}
+      {/*      /!*</a>*!/*/}
+      {/*    </div>*/}
+      {/*  </div>*/}
+      {/*  /!*<ThreeJSAnimation />*!/*/}
+      {/*</div>*/}
       <div className="!max-w-[400px] m-auto block lg:hidden">
         <img
           className={"border-transparent rounded-t-full bg-orange-500 mb-30"}
@@ -16,13 +52,12 @@ function About() {
           alt=""
         />
       </div>
-      <div className="cont">
+      <div className=" cont">
         <h1>
           <span className="main-color font-bold">Harry Ashton</span> a{" "}
           <span className="bord">
             Front-end Developer<i></i>
-          </span>{" "}
-          Based in the UK.
+          </span>
         </h1>
       </div>
       <div className="stauts mt-10">

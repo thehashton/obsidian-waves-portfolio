@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 //= Static Data
 import data from "@/data/info.json";
+import ThreeJSAnimation from "@/components/ThreeJSAnimation";
 
 function Author() {
   const [stickyItemWidth, setStickyItemWidth] = useState(undefined);
@@ -41,40 +42,43 @@ function Author() {
   }, [stickyItemTop]);
 
   return (
-    <div
-      className="author-profile relative md:author-profile lg:!flex hidden !w-full !max-w-[360px] rounded-full pt-80 pb-80"
-      id="sticky_item"
-      style={{ width: stickyItemWidth - 100 }}
-    >
-      <div className="cont">
-        <div className="img">
-          <img src={data.picture} alt="" />
-        </div>
-        <div className="info text-center mt-30">
-          <h5>{data.name}</h5>
-          <p>
-            <a href="#0">{data.username}</a>
-          </p>
-        </div>
-        <div className="social text-center mt-20">
-          {/*<a href="#0">*/}
-          {/*  <i className="fab fa-behance"></i>*/}
-          {/*</a>*/}
-          <a href="https://twitter.com/TheHashton">
-            <i className="fa-brands fa-x-twitter"></i>
-          </a>
-          <a href="https://tiktok.com/@thehashton">
-            <i className="fa-brands fa-tiktok"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/harry-ashton-b0b15b30/">
-            <i className="fab fa-linkedin-in"></i>
-          </a>
-          {/*<a href="#0">*/}
-          {/*  <i className="fab fa-dribbble"></i>*/}
-          {/*</a>*/}
-        </div>
+    <>
+      <div
+        className="author-profile relative md:author-profile lg:!flex hidden !w-full !max-w-[360px] rounded-full pt-80 pb-80"
+        id="sticky_item"
+        style={{ width: stickyItemWidth - 100 }}
+      >
+        {/*<div className="cont">*/}
+        {/*  <div className="img">*/}
+        {/*    <img src={data.picture} alt="" />*/}
+        {/*  </div>*/}
+        {/*  <div className="info text-center mt-30">*/}
+        {/*    <h5>{data.name}</h5>*/}
+        {/*    <p>*/}
+        {/*      <a href="#0">{data.username}</a>*/}
+        {/*    </p>*/}
+        {/*  </div>*/}
+        {/*  <div className="social text-center mt-20">*/}
+        {/*    /!*<a href="#0">*!/*/}
+        {/*    /!*  <i className="fab fa-behance"></i>*!/*/}
+        {/*    /!*</a>*!/*/}
+        {/*    <a href="https://twitter.com/TheHashton">*/}
+        {/*      <i className="fa-brands fa-x-twitter"></i>*/}
+        {/*    </a>*/}
+        {/*    <a href="https://tiktok.com/@thehashton">*/}
+        {/*      <i className="fa-brands fa-tiktok"></i>*/}
+        {/*    </a>*/}
+        {/*    <a href="https://www.linkedin.com/in/harry-ashton-b0b15b30/">*/}
+        {/*      <i className="fab fa-linkedin-in"></i>*/}
+        {/*    </a>*/}
+        {/*    /!*<a href="#0">*!/*/}
+        {/*    /!*  <i className="fab fa-dribbble"></i>*!/*/}
+        {/*    /!*</a>*!/*/}
+        {/*  </div>*/}
+        {/*</div>*/}
+        <ThreeJSAnimation />
       </div>
-    </div>
+    </>
   );
 }
 
