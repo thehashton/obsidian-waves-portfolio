@@ -52,12 +52,13 @@ function About() {
           alt=""
         />
       </div>
-      <div className=" cont">
+      <div className="flex flex-wrap cont">
         <h1>
-          <span className="main-color font-bold">Harry Ashton</span> a{" "}
+          Hi, I'm <span className="main-color font-bold">Harry Ashton</span> a{" "}
           <span className="bord">
             Front-end Developer<i></i>
           </span>
+          who loves making great UI 💻
         </h1>
       </div>
       <div className="stauts mt-10">
