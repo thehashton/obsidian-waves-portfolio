@@ -173,7 +173,9 @@ const AppleProductDetails = () => {
                       <span className="sub-title">
                         <i className="fas fa-list-ul mr-10"></i> Categories :
                       </span>
-                      <p>Web Design</p>
+                      <p>
+                        UI/UX, React, CSS Modules, Scroll Animations, Vercel
+                      </p>
                     </li>
                     <li className="mb-30">
                       <span className="sub-title">
