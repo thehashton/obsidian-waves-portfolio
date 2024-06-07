@@ -1,10 +1,14 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
+import Modal from "react-modal";
+import "./AppleProductDetails.css"; // Ensure to import the CSS file for styling
 
 const AppleProductDetails = () => {
   const [stickyItemWidth, setStickyItemWidth] = useState(undefined);
   const [stickyItemTop, setStickyItemTop] = useState(undefined);
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+  const [currentImage, setCurrentImage] = useState("");
 
   useEffect(() => {
     const stickyItemEl = document
@@ -37,6 +41,16 @@ const AppleProductDetails = () => {
       stickyItemEl.classList.remove("is-positioned");
     }
   }
+
+  const openModal = (imageSrc) => {
+    setCurrentImage(imageSrc);
+    setModalIsOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalIsOpen(false);
+    setCurrentImage("");
+  };
 
   return (
     <section className="project section-padding">
@@ -195,6 +209,17 @@ const AppleProductDetails = () => {
             </div>
           </div>
         </div>
+        <Modal
+          isOpen={modalIsOpen}
+          onRequestClose={closeModal}
+          className="image-modal"
+          overlayClassName="overlay"
+        >
+          <button className="close-button" onClick={closeModal}>
+            &times;
+          </button>
+          <img src={currentImage} alt="" />
+        </Modal>
       </div>
       <div className="imgs mt-80">
         <div className="container">
@@ -206,6 +231,10 @@ const AppleProductDetails = () => {
                     <img
                       src="/assets/imgs/works/apple-product-flow.png"
                       alt=""
+                      onClick={() =>
+                        openModal("/assets/imgs/works/apple-product-flow.png")
+                      }
+                      style={{ cursor: "pointer" }}
                     />
                   </div>
                 </div>
@@ -214,6 +243,10 @@ const AppleProductDetails = () => {
                     <img
                       src="/assets/imgs/works/apple-product-flow-2.png"
                       alt=""
+                      onClick={() =>
+                        openModal("/assets/imgs/works/apple-product-flow-2.png")
+                      }
+                      style={{ cursor: "pointer" }}
                     />
                   </div>
                 </div>
