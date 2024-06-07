@@ -1,5 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
+import Link from "next/link";
 
 const PhoneAppDetails = () => {
   const [stickyItemWidth, setStickyItemWidth] = useState(undefined);
@@ -53,23 +54,18 @@ const PhoneAppDetails = () => {
                     A HTML, CSS and Javascript Single Page Application (SPA).
                   </p>
                   <p className="mt-15">
-                    Now there is more fashion. There is no so-called trends. Now
-                    chase after anything not necessary — nor for fashionable
-                    color nor the shape, nor for style. Think about the content
-                    that you want to invest in a created object, and only then
-                    will form. The thing is your spirit.
+                    An app that that showcases incredible animations, simple
+                    responsive designs for a phone app product.
                   </p>
                   <div className="mt-30">
                     <h6 className="mb-15 line-height-28">
-                      Here choose yourself like that, without any looking back,
-                      do your personal, home, small fashion, and all will be
-                      well.
+                      A Single Page Application (SPA) that helps you build a
+                      powerful, scroll animated website built simply in HTML,
+                      CSS and JavaScript.
                     </h6>
                     <p>
-                      We create everything digital, printable and analytical
-                      won’t seasons, appear days them stars replenish divided.
-                      All second forth. Him place was seas man and gathering
-                      creepeth called fly.
+                      A must have project that anyone should have in their
+                      portfolio.
                     </p>
                     <ul className="rest list-arrow mt-50">
                       <li>
@@ -89,7 +85,7 @@ const PhoneAppDetails = () => {
                             ></path>
                           </svg>
                         </span>
-                        <h6 className="inline fz-18">Amazing communication.</h6>
+                        <h6 className="inline fz-18">HTML, CSS and JS</h6>
                       </li>
                       <li className="mt-20">
                         <span className="icon">
@@ -109,7 +105,7 @@ const PhoneAppDetails = () => {
                           </svg>
                         </span>
                         <h6 className="inline fz-18">
-                          Best trendinf designing experience.
+                          Single Page Application (SPA)
                         </h6>
                       </li>
                       <li className="mt-20">
@@ -129,7 +125,7 @@ const PhoneAppDetails = () => {
                             ></path>
                           </svg>
                         </span>
-                        <h6 className="inline fz-18">Email &amp; Live chat.</h6>
+                        <h6 className="inline fz-18">Scroll Animations</h6>
                       </li>
                       <li className="mt-20">
                         <span className="icon">
@@ -148,7 +144,9 @@ const PhoneAppDetails = () => {
                             ></path>
                           </svg>
                         </span>
-                        <h6 className="inline fz-18">Amazing communication.</h6>
+                        <h6 className="inline fz-18">
+                          100% Device Responsiveness
+                        </h6>
                       </li>
                     </ul>
                   </div>
@@ -171,7 +169,7 @@ const PhoneAppDetails = () => {
                       <span className="sub-title">
                         <i className="fas fa-list-ul mr-10"></i> Categories :
                       </span>
-                      <p>Web Design</p>
+                      <p>SPA, Website, HTML, CSS, JS</p>
                     </li>
                     <li className="mb-30">
                       <span className="sub-title">
@@ -183,7 +181,12 @@ const PhoneAppDetails = () => {
                       <span className="sub-title">
                         <i className="fas fa-globe mr-10"></i> Website :
                       </span>
-                      <p>learnfrontendnow.com</p>
+                      <Link
+                        className={"block"}
+                        href={"https://fn-phone-app.vercel.app/"}
+                      >
+                        https://fn-phone-app.vercel.app
+                      </Link>
                     </li>
                   </ul>
                 </div>
