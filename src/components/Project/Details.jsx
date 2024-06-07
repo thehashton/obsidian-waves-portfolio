@@ -168,7 +168,7 @@ function Details() {
                       <span className="sub-title">
                         <i className="far fa-calendar-alt mr-10"></i> Date :
                       </span>
-                      <p>6, July 2024</p>
+                      <p>6, June 2024</p>
                     </li>
                     <li className="mb-30">
                       <span className="sub-title">
