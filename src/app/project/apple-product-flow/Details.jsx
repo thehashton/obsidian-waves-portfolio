@@ -1,5 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
+import Link from "next/link";
 
 const AppleProductDetails = () => {
   const [stickyItemWidth, setStickyItemWidth] = useState(undefined);
@@ -53,26 +54,24 @@ const AppleProductDetails = () => {
                   </h3>
                   <p>
                     We explore how the apple product purchase flows works so
-                    well and then build it.
+                    well and then build it in React.
                   </p>
                   <p className="mt-15">
-                    Now there is more fashion. There is no so-called trends. Now
-                    chase after anything not necessary — nor for fashionable
-                    color nor the shape, nor for style. Think about the content
-                    that you want to invest in a created object, and only then
-                    will form. The thing is your spirit.
+                    We take you from the general apple product page into the
+                    purchase flow that apple uses. The UI/UX flow is legendary
+                    if you can re-create it and explain it to hiring managers,
+                    that's a massive plus.
                   </p>
                   <div className="mt-30">
                     <h6 className="mb-15 line-height-28">
-                      Here choose yourself like that, without any looking back,
-                      do your personal, home, small fashion, and all will be
-                      well.
+                      Re-create the legendary UI/UX flow of apple's product
+                      purchase page. Find out why Apple is one of the biggest
+                      company in the world.
                     </h6>
                     <p>
-                      We create everything digital, printable and analytical
-                      won’t seasons, appear days them stars replenish divided.
-                      All second forth. Him place was seas man and gathering
-                      creepeth called fly.
+                      We dive deeper into using React to build this amazing flow
+                      and have this has a brilliant gem in your portfolio to
+                      show hiring managers.
                     </p>
                     <ul className="rest list-arrow mt-50">
                       <li>
@@ -92,27 +91,8 @@ const AppleProductDetails = () => {
                             ></path>
                           </svg>
                         </span>
-                        <h6 className="inline fz-18">Amazing communication.</h6>
-                      </li>
-                      <li className="mt-20">
-                        <span className="icon">
-                          <svg
-                            width="100%"
-                            height="100%"
-                            viewBox="0 0 9 8"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              fillRule="evenodd"
-                              clipRule="evenodd"
-                              d="M7.71108 3.78684L8.22361 4.29813L7.71263 4.80992L4.64672 7.87832L4.13433 7.36688L6.87531 4.62335H1.11181H0.750039H0.388177L0.382812 0.718232H1.10645L1.11082 3.90005H6.80113L4.12591 1.22972L4.63689 0.718262L7.71108 3.78684Z"
-                              fill="#fff"
-                            ></path>
-                          </svg>
-                        </span>
                         <h6 className="inline fz-18">
-                          Best trendinf designing experience.
+                          Re-create Proven UI/UX flows that work
                         </h6>
                       </li>
                       <li className="mt-20">
@@ -132,7 +112,7 @@ const AppleProductDetails = () => {
                             ></path>
                           </svg>
                         </span>
-                        <h6 className="inline fz-18">Email &amp; Live chat.</h6>
+                        <h6 className="inline fz-18">A React Project</h6>
                       </li>
                       <li className="mt-20">
                         <span className="icon">
@@ -151,7 +131,26 @@ const AppleProductDetails = () => {
                             ></path>
                           </svg>
                         </span>
-                        <h6 className="inline fz-18">Amazing communication.</h6>
+                        <h6 className="inline fz-18">CSS Modules</h6>
+                      </li>
+                      <li className="mt-20">
+                        <span className="icon">
+                          <svg
+                            width="100%"
+                            height="100%"
+                            viewBox="0 0 9 8"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fillRule="evenodd"
+                              clipRule="evenodd"
+                              d="M7.71108 3.78684L8.22361 4.29813L7.71263 4.80992L4.64672 7.87832L4.13433 7.36688L6.87531 4.62335H1.11181H0.750039H0.388177L0.382812 0.718232H1.10645L1.11082 3.90005H6.80113L4.12591 1.22972L4.63689 0.718262L7.71108 3.78684Z"
+                              fill="#fff"
+                            ></path>
+                          </svg>
+                        </span>
+                        <h6 className="inline fz-18">Scroll animations</h6>
                       </li>
                     </ul>
                   </div>
@@ -182,12 +181,12 @@ const AppleProductDetails = () => {
                       </span>
                       <p>FrontendNow</p>
                     </li>
-                    <li>
-                      <span className="sub-title">
-                        <i className="fas fa-globe mr-10"></i> Website :
-                      </span>
-                      <p>learnfrontendnow.com</p>
-                    </li>
+                    {/*<li>*/}
+                    {/*  <span className="sub-title">*/}
+                    {/*    <i className="fas fa-globe mr-10"></i> Website :*/}
+                    {/*  </span>*/}
+                    {/*  <p>learnfrontendnow.com</p>*/}
+                    {/*</li>*/}
                   </ul>
                 </div>
               </div>
@@ -228,10 +227,10 @@ const AppleProductDetails = () => {
               <div className="d-flex align-items-center mt-80 pt-80 bord-thin-top">
                 <div className="prev">
                   <h6 className="sub-title">
-                    <a href="#">
+                    <Link href="/project/phone-app/">
                       <i className="fas fa-long-arrow-alt-left"></i> Prev
                       Project
-                    </a>
+                    </Link>
                   </h6>
                 </div>
                 <div className="next ml-auto">

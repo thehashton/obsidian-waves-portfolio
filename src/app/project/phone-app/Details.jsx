@@ -230,10 +230,10 @@ const PhoneAppDetails = () => {
                 </div>
                 <div className="next ml-auto">
                   <h6 className="sub-title">
-                    <a href="#">
+                    <Link href="/project/apple-product-flow/">
                       next Project{" "}
                       <i className="fas fa-long-arrow-alt-right"></i>
-                    </a>
+                    </Link>
                   </h6>
                 </div>
               </div>
