@@ -26,7 +26,7 @@ export const metadata = {
 export default function ProjectDetails() {
   return (
     <body className="main-bg">
-      <LoadingScreen />
+      {/*<LoadingScreen />*/}
       <Cursor />
       <ProgressScroll />
       <Navbar />

@@ -13,6 +13,7 @@
     "@monogrid/gainmap-js": "^3.0.5",
     "eslint": "8.43.0",
     "eslint-config-next": "13.4.7",
+    "framer-motion": "^11.2.11",
     "gsap": "^3.12.5",
     "lil-gui": "^0.19.2",
     "next": "13.4.7",

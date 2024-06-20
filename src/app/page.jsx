@@ -30,7 +30,7 @@ export const metadata = {
 export default function Home() {
   return (
     <body className="liquid">
-      <LoadingScreen />
+      {/*<LoadingScreen />*/}
       <Cursor />
       <ProgressScroll />
       <Liquid />
