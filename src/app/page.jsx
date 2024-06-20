@@ -1,8 +1,9 @@
+import Head from "next/head";
 import Script from "next/script";
 //= Scripts
 import generateStylesheetObject from "@/common/generateStylesheetsObject";
 //= Common Components
-import LoadingScreen from "@/components/Common/Loader";
+// import LoadingScreen from "@/components/Common/Loader";
 import Cursor from "@/components/Common/Cursor";
 import ProgressScroll from "@/components/Common/ProgressScroll";
 //= Page Components
@@ -11,12 +12,14 @@ import Navbar from "@/components/Home/Navbar";
 import MainBox from "@/components/Home/MainBox";
 import Portfolio from "@/components/Home/Portfolio";
 import Testimonials from "@/components/Home/Referrals";
-import Blog from "@/components/Home/Blog";
+// import Blog from "@/components/Home/Blog";
 import Contact from "@/components/Home/Contact";
 import Footer from "@/components/Common/Footer";
 
 export const metadata = {
   title: "Harry Ashton - Frontend developer",
+  description:
+    "Webmaster Harry Ashton bringing the thunder with HTML, CSS, JS and React",
   icons: {
     icon: "/assets/imgs/favicon.ico",
     shortcut: "/assets/imgs/favicon.ico",
@@ -30,6 +33,23 @@ export const metadata = {
 export default function Home() {
   return (
     <body className="liquid">
+      <Head>
+        <title>{metadata.title}</title>
+        <meta name="description" content={metadata.description} />
+        <meta property="og:title" content={metadata.title} />
+        <meta property="og:description" content={metadata.description} />
+        <meta property="og:image" content="/assets/imgs/og-image.jpg" />
+        <meta
+          property="og:url"
+          content="https://obsidian-waves-portfolio.vercel.app/"
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={metadata.title} />
+        <meta name="twitter:description" content={metadata.description} />
+        <meta name="twitter:image" content="/assets/imgs/og-image.jpg" />
+        <link rel="icon" href={metadata.icons.icon} />
+        <link rel="shortcut icon" href={metadata.icons.shortcut} />
+      </Head>
       {/*<LoadingScreen />*/}
       <Cursor />
       <ProgressScroll />
