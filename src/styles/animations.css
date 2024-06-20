@@ -1,3 +1,25 @@
+/* animations.css */
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+.typing {
+    white-space: normal;
+    overflow: hidden;
+    /*border-right: .15em solid orange;*/
+    animation:
+            typing 4s steps(40, end),
+            blink-caret .75s step-end infinite;
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: orange; }
+}
+
+
+
 @keyframes fade-in {
     0% {
         opacity: 0;
