@@ -1,6 +1,52 @@
-import React from "react";
+"use client";
+
+import React, { useEffect } from "react";
+import { motion, useAnimation } from "framer-motion";
+
+const fadeInVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: (i) => ({
+    opacity: 1,
+    y: 0,
+    transition: {
+      delay: i * 0.3,
+      duration: 1,
+    },
+  }),
+};
 
 function Contact() {
+  const controls = useAnimation();
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            controls.start((i) => ({
+              ...fadeInVariants.visible(i),
+            }));
+          }
+        });
+      },
+      {
+        threshold: 0.1,
+      },
+    );
+
+    const elements = document.querySelectorAll(".contact-item");
+    elements.forEach((el, index) => {
+      observer.observe(el);
+      el.dataset.index = index;
+    });
+
+    return () => {
+      elements.forEach((el) => {
+        observer.unobserve(el);
+      });
+    };
+  }, [controls]);
+
   return (
     <section
       className="contact section-padding bord-thin-top"
@@ -9,7 +55,13 @@ function Contact() {
     >
       <div className="container">
         <div className="row">
-          <div className="col-lg-5">
+          <motion.div
+            className="col-lg-5 contact-item"
+            initial="hidden"
+            animate={controls}
+            variants={fadeInVariants}
+            custom={0}
+          >
             <div className="sec-head md-mb80">
               <h6 className="dot-titl mb-10">Get In Touch</h6>
               <h2 className="fz-50">Let's work together</h2>
@@ -45,8 +97,14 @@ function Contact() {
                 </li>
               </ul>
             </div>
-          </div>
-          <div className="col-lg-6 offset-lg-1 valign">
+          </motion.div>
+          <motion.div
+            className="col-lg-6 offset-lg-1 contact-item"
+            initial="hidden"
+            animate={controls}
+            variants={fadeInVariants}
+            custom={1}
+          >
             <div className="full-width">
               <form id="contact-form" method="post" action="contact.php">
                 <div className="messages"></div>
@@ -102,7 +160,7 @@ function Contact() {
                 </div>
               </form>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

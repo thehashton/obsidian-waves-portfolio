@@ -1,9 +1,23 @@
 "use client";
-import React, { useEffect } from "react";
-import { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { motion, useAnimation } from "framer-motion";
 import Menu from "@/components/Home/Menu";
 
+const fadeInVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: (i) => ({
+    opacity: 1,
+    y: 0,
+    transition: {
+      delay: i * 0.3,
+      duration: 1,
+    },
+  }),
+};
+
 function Navbar() {
+  const controls = useAnimation();
+
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -62,12 +76,20 @@ function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg static">
       <div className="container !max-w-screen-2xl">
-        <div className={"!max-w-[60px] !w-full !relative"}>
+        <div className={"!max-w-[60px] !w-full !relative my-4"}>
           <Menu />
         </div>
-        <a className="logo" href="/" style={{ width: "175px" }}>
+        <motion.a
+          custom={10}
+          initial="hidden"
+          animate="visible"
+          variants={fadeInVariants}
+          className="logo"
+          href="/"
+          style={{ width: "175px" }}
+        >
           <img src="/assets/imgs/logo-light.png" alt="logo" />
-        </a>
+        </motion.a>
         <div
           className={`collapse navbar-collapse justify-content-center ${
             showNav === true ? "show" : ""
@@ -113,32 +135,46 @@ function Navbar() {
           </ul>
         </div>
         <div className={"flex px-4 gap-3"}>
-          <a
+          <motion.a
+            custom={11}
+            initial="hidden"
+            animate="visible"
+            variants={fadeInVariants}
             href="https://github.com/thehashton"
             className="text-white text-4xl hover:opacity-35 transition-opacity duration-300"
             target="_blank"
             rel="noopener noreferrer"
           >
             <i className="fab fa-github"></i>
-          </a>
-          <a
+          </motion.a>
+          <motion.a
+            custom={12}
+            initial="hidden"
+            animate="visible"
+            variants={fadeInVariants}
             href="https://www.linkedin.com/in/harry-ashton-b0b15b30/"
             className="text-white text-4xl hover:opacity-35 transition-opacity duration-300"
             target="_blank"
             rel="noopener noreferrer"
           >
             <i className="fab fa-linkedin"></i>
-          </a>
+          </motion.a>
         </div>
         <div className="md-hide flex items-center space-x-4">
-          <div className="butn-presv">
+          <motion.div
+            custom={13}
+            initial="hidden"
+            animate="visible"
+            variants={fadeInVariants}
+            className="butn-presv"
+          >
             <a
               href="/"
               className="butn butn-sm butn-bg radius-5 skew !border-orange-500 !bg-orange-500 !text-lg"
             >
               <span className="text-dark">Hire Me!</span>
             </a>
-          </div>
+          </motion.div>
         </div>
       </div>
     </nav>

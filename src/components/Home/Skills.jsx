@@ -1,20 +1,41 @@
 "use client";
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import data from "@/data/info.json";
-import isInView from "@/common/isInView";
 
 function Skills() {
+  const skillsRef = useRef([]);
+
   useEffect(() => {
-    isInView({
-      selector: ".progres",
-      isElements: true,
-      callback: (element) => {
-        element.style.width = element.dataset.value;
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("fade-in");
+          } else {
+            entry.target.classList.remove("fade-in");
+          }
+        });
       },
-      whenOutOfView: (element) => {
-        element.style.width = 0;
+      {
+        threshold: 0.1,
       },
+    );
+
+    skillsRef.current.forEach((skill) => {
+      if (skill) {
+        observer.observe(skill);
+      }
     });
+
+    return () => {
+      if (skillsRef.current) {
+        skillsRef.current.forEach((skill) => {
+          if (skill) {
+            observer.unobserve(skill);
+          }
+        });
+      }
+    };
   }, []);
 
   return (
@@ -24,7 +45,11 @@ function Skills() {
       </div>
       <div className="row">
         {data.skills.map((item, index) => (
-          <div className="col-md-4 col-sm-6 mb-30" key={item.id}>
+          <div
+            className="col-sm-6 mb-30"
+            key={item.id}
+            ref={(el) => (skillsRef.current[index] = el)}
+          >
             <div className={`item`}>
               <div className="d-flex align-items-center mb-30">
                 <div className="mr-30">

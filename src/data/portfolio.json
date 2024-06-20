@@ -13,23 +13,5 @@
     "tag": "E-Commerce UI",
     "href": "/project/apple-product-flow"
 
-  },
-  {
-    "id": 3,
-    "image": "/assets/imgs/works/3.jpg",
-    "title": "Partiner BPO",
-    "tag": "Branding"
-  },
-  {
-    "id": 4,
-    "image": "/assets/imgs/works/4.jpg",
-    "title": "From our gallery",
-    "tag": "Branding"
-  },
-  {
-    "id": 5,
-    "image": "/assets/imgs/works/5.jpg",
-    "title": "Brand Identity",
-    "tag": "Branding"
   }
 ]
