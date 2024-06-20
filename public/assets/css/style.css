@@ -1334,6 +1334,7 @@ body.loaded {
   margin: 0;
   width: 100%;
   background: transparent;
+  flex-wrap: nowrap !important;
   border-bottom: 2px solid transparent;
   z-index: 999;
 }
