@@ -77,7 +77,7 @@ const ThreeJSAnimation = () => {
     };
 
     const onTouchMove = (event) => {
-      event.preventDefault();
+      // event.preventDefault();
       const touch = event.targetTouches[0];
       const pos =
         (((360 * (touch.pageX - window.innerWidth / 2)) / window.innerWidth) *
