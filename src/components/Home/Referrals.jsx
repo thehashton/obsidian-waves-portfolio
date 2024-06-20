@@ -84,7 +84,7 @@ function Referrals() {
   return (
     <section className="testim-crv" data-scroll-index="4">
       <div className="container">
-        <div className="sec-head bord-thin-bottom pb-20 mb-80">
+        <div className="sec-head bord-thin-bottom pb-20 mb-30">
           <div className="row">
             <div className="col-md-6">
               <h4 className="sub-title fz-28">Referrals</h4>
@@ -129,7 +129,7 @@ function Referrals() {
             </div>
           </div>
         </div>
-        <div className="row">
+        <div className="row mb-30">
           <div className="col-12">
             <div className="testim-swiper">
               <div
