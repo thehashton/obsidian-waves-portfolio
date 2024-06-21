@@ -1,9 +1,9 @@
 [
   {
     "id": 1,
-    "image": "/assets/imgs/works/phone-app.png",
-    "title": "Phone-app Project",
-    "tag": "Single Page Application",
+    "image": "/assets/imgs/works/walletwise-preview.png",
+    "title": "Wallet Wise Phone App Website",
+    "tag": "Single Page Application (SPA)",
     "href": "/project/phone-app"
   },
   {

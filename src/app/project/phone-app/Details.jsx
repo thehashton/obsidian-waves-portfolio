@@ -63,7 +63,7 @@ const PhoneAppDetails = () => {
             <div className="row justify-content-center">
               <div className="col-lg-7">
                 <div className="cont md-mb50">
-                  <h3 className="mb-15 fw-500">The Phone App</h3>
+                  <h3 className="mb-15 fw-500">Wallet Wise App</h3>
                   <p>
                     A HTML, CSS and Javascript Single Page Application (SPA).
                   </p>
@@ -197,9 +197,9 @@ const PhoneAppDetails = () => {
                       </span>
                       <Link
                         className={"block"}
-                        href={"https://fn-phone-app.vercel.app/"}
+                        href={"https://walletwisephoneapp.vercel.app/"}
                       >
-                        https://fn-phone-app.vercel.app
+                        https://walletwisephoneapp.vercel.app/
                       </Link>
                     </li>
                   </ul>
@@ -226,28 +226,40 @@ const PhoneAppDetails = () => {
             <div className="col-lg-11">
               <div className="row md-marg">
                 <div className="col-md-6">
-                  <div className="img sm-mb30">
-                    <img
-                      src="/assets/imgs/works/phone-app-1.png"
-                      alt=""
-                      onClick={() =>
-                        openModal("/assets/imgs/works/phone-app-1.png")
-                      }
-                      style={{ cursor: "pointer" }}
-                    />
-                  </div>
+                  <div
+                    className="img sm-mb30"
+                    onClick={() =>
+                      openModal("/assets/imgs/works/walletwise-preview.png")
+                    }
+                    style={{
+                      backgroundImage:
+                        "url(/assets/imgs/works/walletwise-preview.png)",
+                      backgroundSize: "cover",
+                      backgroundPosition: "center",
+                      backgroundRepeat: "no-repeat",
+                      width: "100%",
+                      height: "400px", // Adjust height as needed
+                      cursor: "pointer",
+                    }}
+                  ></div>
                 </div>
                 <div className="col-md-6">
-                  <div className="img">
-                    <img
-                      src="/assets/imgs/works/phone-app-2.png"
-                      alt=""
-                      onClick={() =>
-                        openModal("/assets/imgs/works/phone-app-2.png")
-                      }
-                      style={{ cursor: "pointer" }}
-                    />
-                  </div>
+                  <div
+                    className="img"
+                    onClick={() =>
+                      openModal("/assets/imgs/works/phone-app-2.png")
+                    }
+                    style={{
+                      backgroundImage:
+                        "url(/assets/imgs/works/phone-app-2.png)",
+                      backgroundSize: "cover",
+                      backgroundPosition: "center",
+                      backgroundRepeat: "no-repeat",
+                      width: "100%",
+                      height: "400px", // Adjust height as needed
+                      cursor: "pointer",
+                    }}
+                  ></div>
                 </div>
               </div>
             </div>
