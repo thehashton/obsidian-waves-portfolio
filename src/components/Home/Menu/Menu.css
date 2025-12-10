@@ -112,6 +112,34 @@ body {
     cursor: pointer;
 }
 
+.nav__signature {
+    margin-bottom: 60px;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity .3s ease, transform .3s ease;
+}
+
+body.nav-active .nav__signature {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 1s;
+}
+
+.signature-img {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    filter: brightness(0) invert(1); /* Makes the image white */
+    display: block;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+    .signature-img {
+        max-width: 400px;
+    }
+}
+
 .nav__list {
     display: flex;
     flex-direction: column;

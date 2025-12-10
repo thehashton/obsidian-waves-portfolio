@@ -30,3 +30,81 @@ html, body {
   font-optical-sizing: auto;
   font-style: normal;
 }
+
+/* Toast notification styles - isolated from global button styles */
+[data-toast-container] button {
+  all: unset;
+  box-sizing: border-box;
+}
+
+[data-toast-container] button:focus {
+  outline: none;
+}
+
+[data-toast-container] button:hover {
+  background: transparent !important;
+  border: none !important;
+}
+
+/* About/Hero section mobile centering */
+@media (max-width: 768px) {
+  .about-hero-title {
+    text-align: center !important;
+  }
+  
+  .about-button-container {
+    display: flex !important;
+    justify-content: center !important;
+  }
+  
+  .about-text-section {
+    text-align: center !important;
+  }
+  
+  .about-me-subtitle {
+    display: none !important;
+  }
+  
+  /* Project page mobile - reduce top padding */
+  .project.section-padding {
+    padding-top: 40px !important;
+  }
+  
+  /* Reduce margin on empty image div */
+  .project .img.mb-80 {
+    margin-bottom: 30px !important;
+  }
+}
+
+/* Project page desktop - reduce top padding */
+.project.section-padding {
+  padding-top: 60px !important;
+}
+
+/* Contact form - 2 columns with spacing on desktop */
+@media (min-width: 992px) {
+  .contact .controls.row > .col-lg-6:first-of-type {
+    padding-right: 15px !important;
+  }
+  
+  .contact .controls.row > .col-lg-6:nth-of-type(2) {
+    padding-left: 15px !important;
+  }
+  
+  /* Contact section - 2 column layout (left: contact info, right: form) */
+  .contact > .container > .row > .col-lg-6.contact-item:first-child {
+    padding-right: 30px !important;
+  }
+  
+  .contact > .container > .row > .col-lg-6.contact-item:last-child {
+    padding-left: 30px !important;
+  }
+}
+
+/* Skills cards - ensure perfect vertical centering */
+.skills .item {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 20px !important;
+}

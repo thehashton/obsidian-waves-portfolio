@@ -56,6 +56,15 @@ const Menu = () => {
 
       <div className={`nav ${navActive ? "nav--active" : ""}`}>
         <div className="nav__content">
+          {navActive && (
+            <div className="nav__signature">
+              <img 
+                src="/assets/imgs/harryashton_signature.png" 
+                alt="Signature" 
+                className="signature-img"
+              />
+            </div>
+          )}
           <ul className="nav__list">
             <li className="nav__list-item">
               <Link

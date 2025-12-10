@@ -43,22 +43,24 @@ function Skills() {
       <div className="sec-head bord-thin-bottom pb-20 mb-80">
         <h4 className="sub-title fz-28">Skills</h4>
       </div>
-      <div className="row">
+      <div className="row justify-content-center">
         {data.skills.map((item, index) => (
           <div
-            className="col-sm-6 mb-30"
+            className="col-6 col-sm-4 mb-30"
             key={item.id}
             ref={(el) => (skillsRef.current[index] = el)}
           >
-            <div className={`item`}>
-              <div className="d-flex align-items-center mb-30">
-                <div className="mr-30">
+            <div className={`item`} style={{ padding: '20px', minHeight: '100px', textAlign: 'center', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+              <div className="d-flex align-items-center justify-content-center" style={{ gap: '16px', flexWrap: 'nowrap', width: '100%' }}>
+                <div style={{ flexShrink: 0, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                   <div className="img icon-img-40">
-                    <img src={item.logo} alt="" />
+                    <img src={item.logo} alt="" style={{ width: '40px', height: '40px', objectFit: 'contain' }} />
                   </div>
                 </div>
-                <div>
-                  <h6 className="fz-18">{item.title}</h6>
+                <div style={{ flexShrink: 0 }}>
+                  <h6 className="fz-18" style={{ margin: 0, lineHeight: '1.4', fontSize: '15px', textAlign: 'center' }}>
+                    {item.title}
+                  </h6>
                 </div>
               </div>
               {/*<div className="skill-progress">*/}

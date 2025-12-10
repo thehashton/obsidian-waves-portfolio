@@ -36,6 +36,28 @@
             }
         }
 
+        @media (max-width: 768px) {
+            .img{
+                background: rgba(255, 255, 255, 0.05);
+                border-radius: 5px;
+                overflow: hidden;
+                
+                > a{
+                    height: 300px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                
+                img{
+                    object-fit: contain !important;
+                    object-position: center center;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+
         .cont{
             padding: 0 15px;
 

@@ -9,8 +9,8 @@ const fadeInVariants = {
     opacity: 1,
     y: 0,
     transition: {
-      delay: i * 0.3,
-      duration: 1,
+      delay: i * 0.1,
+      duration: 0.5,
     },
   }),
 };
@@ -40,6 +40,14 @@ function Navbar() {
       setTimeout(() => {
         section.scrollIntoView();
       }, 500);
+    }
+  }
+
+  function scrollToContact(event) {
+    event.preventDefault();
+    const contactSection = document.querySelector("#contact");
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" });
     }
   }
 
@@ -80,7 +88,7 @@ function Navbar() {
           <Menu />
         </div>
         <motion.a
-          custom={10}
+          custom={0}
           initial="hidden"
           animate="visible"
           variants={fadeInVariants}
@@ -136,7 +144,7 @@ function Navbar() {
         </div>
         <div className={"flex px-4 gap-3"}>
           <motion.a
-            custom={11}
+            custom={0.1}
             initial="hidden"
             animate="visible"
             variants={fadeInVariants}
@@ -148,7 +156,7 @@ function Navbar() {
             <i className="fab fa-github"></i>
           </motion.a>
           <motion.a
-            custom={12}
+            custom={0.2}
             initial="hidden"
             animate="visible"
             variants={fadeInVariants}
@@ -162,14 +170,15 @@ function Navbar() {
         </div>
         <div className="md-hide flex items-center space-x-4">
           <motion.div
-            custom={13}
+            custom={0.3}
             initial="hidden"
             animate="visible"
             variants={fadeInVariants}
             className="butn-presv"
           >
             <a
-              href="/"
+              href="#contact"
+              onClick={scrollToContact}
               className="butn butn-sm butn-bg radius-5 skew !border-orange-500 !bg-orange-500 !text-lg"
             >
               <span className="text-dark">Hire Me!</span>

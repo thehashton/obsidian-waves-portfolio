@@ -28,6 +28,10 @@ function Cursor() {
     window.addEventListener('mousemove', editCursor);
 
     document.querySelectorAll("a, .cursor-pointer").forEach(el => {
+      // Skip elements with data-no-cursor attribute (like toast notifications)
+      if (el.hasAttribute('data-no-cursor') || el.closest('[data-no-cursor]')) {
+        return;
+      }
       el.addEventListener('mousemove', () => {
         cursor.classList.add('cursor-active')
       });
